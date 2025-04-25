@@ -1,10 +1,10 @@
-from textnode import *
+from textnode import TextNode, TextType
 
-# hello world
 
 def main():
-    TextNode("This is some anchor text", link, "https://www.boot.dev")
-    return
+    node = TextNode("This is some anchor text", TextType.LINK, "https://www.boot.dev")
+    return print(f"{node}")
+    
 
 
 

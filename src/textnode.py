@@ -8,8 +8,8 @@ class TextType(Enum):
     LINK = "link"
     IMAGE = "image"
 
-class TextNode(TEXT, TEXT_TYPE, URL=None):
-    def __init__(self, text, text_type, url):
+class TextNode:
+    def __init__(self, text, text_type, url=None):
         self.text = text
         self.text_type = text_type
         self.url = url
@@ -22,7 +22,7 @@ class TextNode(TEXT, TEXT_TYPE, URL=None):
         )
         
     def __repr__(self):
-        return f"TextNode({self.text}, {self.text_type.value}, {self.url}"
+        return f"TextNode({self.text}, {self.text_type.value}, {self.url})"
         
         
         
